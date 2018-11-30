@@ -15,6 +15,7 @@
 		402A849621AFDD1100D8A533 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 402A849521AFDD1100D8A533 /* main.m */; };
 		402A84A021AFDD1200D8A533 /* DouyinLoadingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 402A849F21AFDD1200D8A533 /* DouyinLoadingTests.m */; };
 		402A84AB21AFDD1200D8A533 /* DouyinLoadingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 402A84AA21AFDD1200D8A533 /* DouyinLoadingUITests.m */; };
+		402A84BB21AFDD8300D8A533 /* CSDouYinLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = 402A84BA21AFDD8300D8A533 /* CSDouYinLoading.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		402A84A621AFDD1200D8A533 /* DouyinLoadingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DouyinLoadingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		402A84AA21AFDD1200D8A533 /* DouyinLoadingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DouyinLoadingUITests.m; sourceTree = "<group>"; };
 		402A84AC21AFDD1200D8A533 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		402A84B921AFDD8300D8A533 /* CSDouYinLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSDouYinLoading.h; sourceTree = "<group>"; };
+		402A84BA21AFDD8300D8A533 /* CSDouYinLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSDouYinLoading.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		402A847A21AFDD0F00D8A533 = {
 			isa = PBXGroup;
 			children = (
+				402A84B821AFDD8300D8A533 /* CSDouYinLoading */,
 				402A848521AFDD0F00D8A533 /* DouyinLoading */,
 				402A849E21AFDD1200D8A533 /* DouyinLoadingTests */,
 				402A84A921AFDD1200D8A533 /* DouyinLoadingUITests */,
@@ -130,6 +134,15 @@
 				402A84AC21AFDD1200D8A533 /* Info.plist */,
 			);
 			path = DouyinLoadingUITests;
+			sourceTree = "<group>";
+		};
+		402A84B821AFDD8300D8A533 /* CSDouYinLoading */ = {
+			isa = PBXGroup;
+			children = (
+				402A84B921AFDD8300D8A533 /* CSDouYinLoading.h */,
+				402A84BA21AFDD8300D8A533 /* CSDouYinLoading.m */,
+			);
+			path = CSDouYinLoading;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				402A84BB21AFDD8300D8A533 /* CSDouYinLoading.m in Sources */,
 				402A848B21AFDD0F00D8A533 /* ViewController.m in Sources */,
 				402A849621AFDD1100D8A533 /* main.m in Sources */,
 				402A848821AFDD0F00D8A533 /* AppDelegate.m in Sources */,

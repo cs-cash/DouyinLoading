@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CSDouYinLoading.h"
 
 @interface ViewController ()
 
@@ -16,8 +17,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor colorWithRed:23/255.0f green:25/255.0f blue:41/255.0f alpha:1];
+    [self startLoading];
 }
 
+-(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    UITouch *touch = [touches anyObject];
+    
+    if (touch.tapCount== 1)
+    {
+        [self stopLoading];
+        [self performSelector:@selector(startLoading) withObject:self afterDelay:1.0f];
+    }
+}
+
+- (void)startLoading {
+    [CSDouYinLoading showInView:self.view];
+}
+
+- (void)stopLoading {
+    [CSDouYinLoading hideInView:self.view];
+}
 
 @end
